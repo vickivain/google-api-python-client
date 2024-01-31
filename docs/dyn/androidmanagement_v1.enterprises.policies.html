@@ -153,8 +153,8 @@ Returns:
     &quot;A String&quot;,
   ],
   &quot;appAutoUpdatePolicy&quot;: &quot;A String&quot;, # Recommended alternative: autoUpdateMode which is set per app, provides greater flexibility around update frequency.When autoUpdateMode is set to AUTO_UPDATE_POSTPONED or AUTO_UPDATE_HIGH_PRIORITY, this field has no effect.The app auto update policy, which controls when automatic app updates can be applied.
-  &quot;applications&quot;: [ # Policy applied to apps.
-    { # Policy for an individual app. Note: Application availability on a given device cannot be changed using this policy if installAppsDisabled is enabled. The maximum number of applications that you can specify per enterprise policy is 3,000.
+  &quot;applications&quot;: [ # Policy applied to apps. This can have at most 3,000 elements.
+    { # Policy for an individual app. Note: Application availability on a given device cannot be changed using this policy if installAppsDisabled is enabled. The maximum number of applications that you can specify per policy is 3,000.
       &quot;accessibleTrackIds&quot;: [ # List of the app’s track IDs that a device belonging to the enterprise can access. If the list contains multiple track IDs, devices receive the latest version among all accessible tracks. If the list contains no track IDs, devices only have access to the app’s production track. More details about each track are available in AppTrackInfo.
         &quot;A String&quot;,
       ],
@@ -259,6 +259,7 @@ Returns:
   &quot;deviceRadioState&quot;: { # Controls for device radio settings. # Covers controls for radio state such as Wi-Fi, bluetooth, and more.
     &quot;airplaneModeState&quot;: &quot;A String&quot;, # Controls whether airplane mode can be toggled by the user or not.
     &quot;cellularTwoGState&quot;: &quot;A String&quot;, # Controls whether cellular 2G setting can be toggled by the user or not.
+    &quot;minimumWifiSecurityLevel&quot;: &quot;A String&quot;, # The minimum required security level of Wi-Fi networks that the device can connect to.
     &quot;ultraWidebandState&quot;: &quot;A String&quot;, # Controls the state of the ultra wideband setting and whether the user can toggle it on or off.
     &quot;wifiState&quot;: &quot;A String&quot;, # Controls current state of Wi-Fi and if user can change its state.
   },
@@ -551,8 +552,8 @@ Returns:
         &quot;A String&quot;,
       ],
       &quot;appAutoUpdatePolicy&quot;: &quot;A String&quot;, # Recommended alternative: autoUpdateMode which is set per app, provides greater flexibility around update frequency.When autoUpdateMode is set to AUTO_UPDATE_POSTPONED or AUTO_UPDATE_HIGH_PRIORITY, this field has no effect.The app auto update policy, which controls when automatic app updates can be applied.
-      &quot;applications&quot;: [ # Policy applied to apps.
-        { # Policy for an individual app. Note: Application availability on a given device cannot be changed using this policy if installAppsDisabled is enabled. The maximum number of applications that you can specify per enterprise policy is 3,000.
+      &quot;applications&quot;: [ # Policy applied to apps. This can have at most 3,000 elements.
+        { # Policy for an individual app. Note: Application availability on a given device cannot be changed using this policy if installAppsDisabled is enabled. The maximum number of applications that you can specify per policy is 3,000.
           &quot;accessibleTrackIds&quot;: [ # List of the app’s track IDs that a device belonging to the enterprise can access. If the list contains multiple track IDs, devices receive the latest version among all accessible tracks. If the list contains no track IDs, devices only have access to the app’s production track. More details about each track are available in AppTrackInfo.
             &quot;A String&quot;,
           ],
@@ -657,6 +658,7 @@ Returns:
       &quot;deviceRadioState&quot;: { # Controls for device radio settings. # Covers controls for radio state such as Wi-Fi, bluetooth, and more.
         &quot;airplaneModeState&quot;: &quot;A String&quot;, # Controls whether airplane mode can be toggled by the user or not.
         &quot;cellularTwoGState&quot;: &quot;A String&quot;, # Controls whether cellular 2G setting can be toggled by the user or not.
+        &quot;minimumWifiSecurityLevel&quot;: &quot;A String&quot;, # The minimum required security level of Wi-Fi networks that the device can connect to.
         &quot;ultraWidebandState&quot;: &quot;A String&quot;, # Controls the state of the ultra wideband setting and whether the user can toggle it on or off.
         &quot;wifiState&quot;: &quot;A String&quot;, # Controls current state of Wi-Fi and if user can change its state.
       },
@@ -955,8 +957,8 @@ Args:
     &quot;A String&quot;,
   ],
   &quot;appAutoUpdatePolicy&quot;: &quot;A String&quot;, # Recommended alternative: autoUpdateMode which is set per app, provides greater flexibility around update frequency.When autoUpdateMode is set to AUTO_UPDATE_POSTPONED or AUTO_UPDATE_HIGH_PRIORITY, this field has no effect.The app auto update policy, which controls when automatic app updates can be applied.
-  &quot;applications&quot;: [ # Policy applied to apps.
-    { # Policy for an individual app. Note: Application availability on a given device cannot be changed using this policy if installAppsDisabled is enabled. The maximum number of applications that you can specify per enterprise policy is 3,000.
+  &quot;applications&quot;: [ # Policy applied to apps. This can have at most 3,000 elements.
+    { # Policy for an individual app. Note: Application availability on a given device cannot be changed using this policy if installAppsDisabled is enabled. The maximum number of applications that you can specify per policy is 3,000.
       &quot;accessibleTrackIds&quot;: [ # List of the app’s track IDs that a device belonging to the enterprise can access. If the list contains multiple track IDs, devices receive the latest version among all accessible tracks. If the list contains no track IDs, devices only have access to the app’s production track. More details about each track are available in AppTrackInfo.
         &quot;A String&quot;,
       ],
@@ -1061,6 +1063,7 @@ Args:
   &quot;deviceRadioState&quot;: { # Controls for device radio settings. # Covers controls for radio state such as Wi-Fi, bluetooth, and more.
     &quot;airplaneModeState&quot;: &quot;A String&quot;, # Controls whether airplane mode can be toggled by the user or not.
     &quot;cellularTwoGState&quot;: &quot;A String&quot;, # Controls whether cellular 2G setting can be toggled by the user or not.
+    &quot;minimumWifiSecurityLevel&quot;: &quot;A String&quot;, # The minimum required security level of Wi-Fi networks that the device can connect to.
     &quot;ultraWidebandState&quot;: &quot;A String&quot;, # Controls the state of the ultra wideband setting and whether the user can toggle it on or off.
     &quot;wifiState&quot;: &quot;A String&quot;, # Controls current state of Wi-Fi and if user can change its state.
   },
@@ -1342,8 +1345,8 @@ Returns:
     &quot;A String&quot;,
   ],
   &quot;appAutoUpdatePolicy&quot;: &quot;A String&quot;, # Recommended alternative: autoUpdateMode which is set per app, provides greater flexibility around update frequency.When autoUpdateMode is set to AUTO_UPDATE_POSTPONED or AUTO_UPDATE_HIGH_PRIORITY, this field has no effect.The app auto update policy, which controls when automatic app updates can be applied.
-  &quot;applications&quot;: [ # Policy applied to apps.
-    { # Policy for an individual app. Note: Application availability on a given device cannot be changed using this policy if installAppsDisabled is enabled. The maximum number of applications that you can specify per enterprise policy is 3,000.
+  &quot;applications&quot;: [ # Policy applied to apps. This can have at most 3,000 elements.
+    { # Policy for an individual app. Note: Application availability on a given device cannot be changed using this policy if installAppsDisabled is enabled. The maximum number of applications that you can specify per policy is 3,000.
       &quot;accessibleTrackIds&quot;: [ # List of the app’s track IDs that a device belonging to the enterprise can access. If the list contains multiple track IDs, devices receive the latest version among all accessible tracks. If the list contains no track IDs, devices only have access to the app’s production track. More details about each track are available in AppTrackInfo.
         &quot;A String&quot;,
       ],
@@ -1448,6 +1451,7 @@ Returns:
   &quot;deviceRadioState&quot;: { # Controls for device radio settings. # Covers controls for radio state such as Wi-Fi, bluetooth, and more.
     &quot;airplaneModeState&quot;: &quot;A String&quot;, # Controls whether airplane mode can be toggled by the user or not.
     &quot;cellularTwoGState&quot;: &quot;A String&quot;, # Controls whether cellular 2G setting can be toggled by the user or not.
+    &quot;minimumWifiSecurityLevel&quot;: &quot;A String&quot;, # The minimum required security level of Wi-Fi networks that the device can connect to.
     &quot;ultraWidebandState&quot;: &quot;A String&quot;, # Controls the state of the ultra wideband setting and whether the user can toggle it on or off.
     &quot;wifiState&quot;: &quot;A String&quot;, # Controls current state of Wi-Fi and if user can change its state.
   },

@@ -603,6 +603,7 @@ Args:
     &quot;monitoringConfig&quot;: { # MonitoringConfig is cluster monitoring configuration. # Monitoring configuration for the cluster.
       &quot;advancedDatapathObservabilityConfig&quot;: { # AdvancedDatapathObservabilityConfig specifies configuration of observability features of advanced datapath. # Configuration of Advanced Datapath Observability features.
         &quot;enableMetrics&quot;: True or False, # Expose flow metrics on nodes
+        &quot;enableRelay&quot;: True or False, # Enable Relay component
         &quot;relayMode&quot;: &quot;A String&quot;, # Method used to make Relay available
       },
       &quot;componentConfig&quot;: { # MonitoringComponentConfig is cluster monitoring component configuration. # Monitoring components configuration
@@ -634,6 +635,7 @@ Args:
       &quot;gatewayApiConfig&quot;: { # GatewayAPIConfig contains the desired config of Gateway API on this cluster. # GatewayAPIConfig contains the desired config of Gateway API on this cluster.
         &quot;channel&quot;: &quot;A String&quot;, # The Gateway API release channel to use for Gateway API.
       },
+      &quot;inTransitEncryptionConfig&quot;: &quot;A String&quot;, # Specify the details of in-transit encryption.
       &quot;network&quot;: &quot;A String&quot;, # Output only. The relative name of the Google Compute Engine network(https://cloud.google.com/compute/docs/networks-and-firewalls#networks) to which the cluster is connected. Example: projects/my-project/global/networks/my-network
       &quot;networkPerformanceConfig&quot;: { # Configuration of network bandwidth tiers # Network bandwidth tier configuration.
         &quot;totalEgressBandwidthTier&quot;: &quot;A String&quot;, # Specifies the total network bandwidth tier for NodePools in the cluster.
@@ -1509,6 +1511,7 @@ Returns:
   &quot;monitoringConfig&quot;: { # MonitoringConfig is cluster monitoring configuration. # Monitoring configuration for the cluster.
     &quot;advancedDatapathObservabilityConfig&quot;: { # AdvancedDatapathObservabilityConfig specifies configuration of observability features of advanced datapath. # Configuration of Advanced Datapath Observability features.
       &quot;enableMetrics&quot;: True or False, # Expose flow metrics on nodes
+      &quot;enableRelay&quot;: True or False, # Enable Relay component
       &quot;relayMode&quot;: &quot;A String&quot;, # Method used to make Relay available
     },
     &quot;componentConfig&quot;: { # MonitoringComponentConfig is cluster monitoring component configuration. # Monitoring components configuration
@@ -1540,6 +1543,7 @@ Returns:
     &quot;gatewayApiConfig&quot;: { # GatewayAPIConfig contains the desired config of Gateway API on this cluster. # GatewayAPIConfig contains the desired config of Gateway API on this cluster.
       &quot;channel&quot;: &quot;A String&quot;, # The Gateway API release channel to use for Gateway API.
     },
+    &quot;inTransitEncryptionConfig&quot;: &quot;A String&quot;, # Specify the details of in-transit encryption.
     &quot;network&quot;: &quot;A String&quot;, # Output only. The relative name of the Google Compute Engine network(https://cloud.google.com/compute/docs/networks-and-firewalls#networks) to which the cluster is connected. Example: projects/my-project/global/networks/my-network
     &quot;networkPerformanceConfig&quot;: { # Configuration of network bandwidth tiers # Network bandwidth tier configuration.
       &quot;totalEgressBandwidthTier&quot;: &quot;A String&quot;, # Specifies the total network bandwidth tier for NodePools in the cluster.
@@ -2362,6 +2366,7 @@ Returns:
       &quot;monitoringConfig&quot;: { # MonitoringConfig is cluster monitoring configuration. # Monitoring configuration for the cluster.
         &quot;advancedDatapathObservabilityConfig&quot;: { # AdvancedDatapathObservabilityConfig specifies configuration of observability features of advanced datapath. # Configuration of Advanced Datapath Observability features.
           &quot;enableMetrics&quot;: True or False, # Expose flow metrics on nodes
+          &quot;enableRelay&quot;: True or False, # Enable Relay component
           &quot;relayMode&quot;: &quot;A String&quot;, # Method used to make Relay available
         },
         &quot;componentConfig&quot;: { # MonitoringComponentConfig is cluster monitoring component configuration. # Monitoring components configuration
@@ -2393,6 +2398,7 @@ Returns:
         &quot;gatewayApiConfig&quot;: { # GatewayAPIConfig contains the desired config of Gateway API on this cluster. # GatewayAPIConfig contains the desired config of Gateway API on this cluster.
           &quot;channel&quot;: &quot;A String&quot;, # The Gateway API release channel to use for Gateway API.
         },
+        &quot;inTransitEncryptionConfig&quot;: &quot;A String&quot;, # Specify the details of in-transit encryption.
         &quot;network&quot;: &quot;A String&quot;, # Output only. The relative name of the Google Compute Engine network(https://cloud.google.com/compute/docs/networks-and-firewalls#networks) to which the cluster is connected. Example: projects/my-project/global/networks/my-network
         &quot;networkPerformanceConfig&quot;: { # Configuration of network bandwidth tiers # Network bandwidth tier configuration.
           &quot;totalEgressBandwidthTier&quot;: &quot;A String&quot;, # Specifies the total network bandwidth tier for NodePools in the cluster.
@@ -3786,6 +3792,7 @@ Args:
       &quot;enabled&quot;: True or False, # Whether to enable the Identity Service component
     },
     &quot;desiredImageType&quot;: &quot;A String&quot;, # The desired image type for the node pool. NOTE: Set the &quot;desired_node_pool&quot; field as well.
+    &quot;desiredInTransitEncryptionConfig&quot;: &quot;A String&quot;, # Specify the details of in-transit encryption.
     &quot;desiredIntraNodeVisibilityConfig&quot;: { # IntraNodeVisibilityConfig contains the desired config of the intra-node visibility on this cluster. # The desired config of Intra-node visibility.
       &quot;enabled&quot;: True or False, # Enables intra node visibility for this cluster.
     },
@@ -3825,6 +3832,7 @@ Args:
     &quot;desiredMonitoringConfig&quot;: { # MonitoringConfig is cluster monitoring configuration. # The desired monitoring configuration.
       &quot;advancedDatapathObservabilityConfig&quot;: { # AdvancedDatapathObservabilityConfig specifies configuration of observability features of advanced datapath. # Configuration of Advanced Datapath Observability features.
         &quot;enableMetrics&quot;: True or False, # Expose flow metrics on nodes
+        &quot;enableRelay&quot;: True or False, # Enable Relay component
         &quot;relayMode&quot;: &quot;A String&quot;, # Method used to make Relay available
       },
       &quot;componentConfig&quot;: { # MonitoringComponentConfig is cluster monitoring component configuration. # Monitoring components configuration

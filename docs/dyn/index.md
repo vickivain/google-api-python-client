@@ -12,7 +12,6 @@
 
 ## accesscontextmanager
 * [v1](http://googleapis.github.io/google-api-python-client/docs/dyn/accesscontextmanager_v1.html)
-* [v1beta](http://googleapis.github.io/google-api-python-client/docs/dyn/accesscontextmanager_v1beta.html)
 
 
 ## acmedns
@@ -126,6 +125,11 @@
 * [v1beta](http://googleapis.github.io/google-api-python-client/docs/dyn/appengine_v1beta.html)
 
 
+## apphub
+* [v1](http://googleapis.github.io/google-api-python-client/docs/dyn/apphub_v1.html)
+* [v1alpha](http://googleapis.github.io/google-api-python-client/docs/dyn/apphub_v1alpha.html)
+
+
 ## area120tables
 * [v1alpha1](http://googleapis.github.io/google-api-python-client/docs/dyn/area120tables_v1alpha1.html)
 
@@ -171,6 +175,7 @@
 
 
 ## bigqueryconnection
+* [v1](http://googleapis.github.io/google-api-python-client/docs/dyn/bigqueryconnection_v1.html)
 * [v1beta1](http://googleapis.github.io/google-api-python-client/docs/dyn/bigqueryconnection_v1beta1.html)
 
 
@@ -477,6 +482,7 @@
 * [v1](http://googleapis.github.io/google-api-python-client/docs/dyn/displayvideo_v1.html)
 * [v2](http://googleapis.github.io/google-api-python-client/docs/dyn/displayvideo_v2.html)
 * [v3](http://googleapis.github.io/google-api-python-client/docs/dyn/displayvideo_v3.html)
+* [v4](http://googleapis.github.io/google-api-python-client/docs/dyn/displayvideo_v4.html)
 
 
 ## dlp
@@ -567,6 +573,7 @@
 
 ## firebaseappdistribution
 * [v1](http://googleapis.github.io/google-api-python-client/docs/dyn/firebaseappdistribution_v1.html)
+* [v1alpha](http://googleapis.github.io/google-api-python-client/docs/dyn/firebaseappdistribution_v1alpha.html)
 
 
 ## firebasedatabase
@@ -1192,6 +1199,10 @@
 * [v1beta1](http://googleapis.github.io/google-api-python-client/docs/dyn/vpcaccess_v1beta1.html)
 
 
+## walletobjects
+* [v1](http://googleapis.github.io/google-api-python-client/docs/dyn/walletobjects_v1.html)
+
+
 ## webfonts
 * [v1](http://googleapis.github.io/google-api-python-client/docs/dyn/webfonts_v1.html)
 
@@ -1218,6 +1229,10 @@
 
 ## workloadmanager
 * [v1](http://googleapis.github.io/google-api-python-client/docs/dyn/workloadmanager_v1.html)
+
+
+## workspaceevents
+* [v1](http://googleapis.github.io/google-api-python-client/docs/dyn/workspaceevents_v1.html)
 
 
 ## workstations
